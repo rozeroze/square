@@ -1,9 +1,9 @@
+/* common */
 body {
     background-color: #000000;
     background-size: cover;
     color: #ffffff;
 }
-
 .center {
     position: absolute;
     top: 50%;
@@ -13,6 +13,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* square */
 ul.square {
     list-style: none;
 }
@@ -33,12 +34,10 @@ ul.square li:nth-child(even) {
 ul.square li:nth-child(n+1) {
     margin-top: -25px;
 }
-
 ul.square li:hover {
     background: aqua;
     color: black;
 }
-
 ul.square li:after {
     content: attr(content);
     position: absolute;
@@ -48,7 +47,15 @@ ul.square li:after {
     white-space: nowrap;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-
 ul.square li:hover:after {
     content: attr(detail);
+}
+
+/* back */
+.back > div {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+.back > div.active {
+    opacity: 0.8;
 }
