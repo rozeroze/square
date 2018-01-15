@@ -1,8 +1,8 @@
 # square
 Webページを作る
-- シンプル
-- 軽量
-- クール
+- Symple
+- Light Weight
+- Cool
 
 # demo
 https://rozeroze.github.io/square/
