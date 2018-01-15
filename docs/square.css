@@ -22,6 +22,7 @@ ul.square li {
     width: 80px;
     height: 80px;
     position: relative;
+    transition: background 2s ease-in-out;
 }
 ul.square li:nth-child(odd) {
     margin-right: 58px;
