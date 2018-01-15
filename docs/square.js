@@ -2,13 +2,11 @@ function ShowBack() {
     var content = this.getAttribute('content');
     var back = document.getElementById(content);
     back.classList.add('active');
-    console.log(back);
 }
 function HideBack() {
     var content = this.getAttribute('content');
     var back = document.getElementById(content);
     back.classList.remove('active');
-    console.log(back);
 }
 
 window.onload = function () {
