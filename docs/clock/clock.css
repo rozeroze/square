@@ -1,0 +1,90 @@
+/* common */
+body {
+    background-color: #000000;
+    background-size: cover;
+    color: #ffffff;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+}
+
+/* clock */
+#clock { width: 600px; height: 600px; position: relative; }
+#clock * { position: absolute; top: 50%; left: 50%; margin: 0; transform: translate(-50%, -50%); }
+
+#clock .clock-circul-out { width: 100%; height: 100%; border: 1px solid chocolate; border-radius: 50%; }
+#clock .clock-circul-in { width: 98%; height: 98%; border: 1px solid chocolate; border-radius: 50%; }
+
+#clock .clock-number { top: 1%; left: 48%; height: 98%; font-size: 28px; color: chocolate; }
+#clock .clock-number-1  { transform: rotate(30deg); }
+#clock .clock-number-2  { transform: rotate(60deg); }
+#clock .clock-number-3  { transform: rotate(90deg); }
+#clock .clock-number-4  { transform: rotate(120deg); }
+#clock .clock-number-5  { transform: rotate(150deg); }
+#clock .clock-number-6  { transform: rotate(180deg); }
+#clock .clock-number-7  { transform: rotate(210deg); }
+#clock .clock-number-8  { transform: rotate(240deg); }
+#clock .clock-number-9  { transform: rotate(270deg); }
+#clock .clock-number-10 { transform: rotate(300deg); }
+#clock .clock-number-11 { transform: rotate(330deg); }
+#clock .clock-number-12 { transform: rotate(360deg); }
+#clock .clock-number-1:after  { content: 'I'; }
+#clock .clock-number-2:after  { content: 'II'; }
+#clock .clock-number-3:after  { content: 'III'; }
+#clock .clock-number-4:after  { content: 'IV'; }
+#clock .clock-number-5:after  { content: 'V'; }
+#clock .clock-number-6:after  { content: 'VI'; }
+#clock .clock-number-7:after  { content: 'VII'; }
+#clock .clock-number-8:after  { content: 'VIII'; }
+#clock .clock-number-9:after  { content: 'IX'; }
+#clock .clock-number-10:after { content: 'X'; }
+#clock .clock-number-11:after { content: 'XI'; }
+#clock .clock-number-12:after { content: 'XII'; }
+
+#clock .clock-point { width: 2%; height: 2%; border-radius: 50%; background: chocolate; }
+
+#clock .clock-hand-hour {
+    height: 37%; top: 31.5%; left: 50%;
+    width: 0%;
+    animation: clock-round 72s linear 0s infinite;
+}
+#clock .clock-hand-hour .clock-hand-hour-line {
+    width: 8px; height: 100%;
+    top: 90px;
+    background: chocolate;
+}
+/*
+#clock .clock-hand-hour .clock-hand-hour-cross {
+    height: 4%; width: 40px;
+    top: 80%;
+    background: chocolate;
+}
+*/
+
+#clock .clock-hand-minute {
+    height: 44%; top: 28%; left: 50%;
+    width: 0%;
+    animation: clock-round 6s linear 0s infinite;
+}
+#clock .clock-hand-minute .clock-hand-minute-line {
+    width: 4px; height: 100%;
+    top: 110px;
+    background: chocolate;
+}
+/*
+#clock .clock-hand-minute .clock-hand-minute-cross {
+    height: 2%; width: 15px;
+    top: 85%;
+    background: chocolate;
+}
+*/
+
+@keyframes clock-round {
+    0%   { transform: rotate(0deg) translate(-50%, -50%) }
+    100% { transform: rotate(360deg) translate(-50%, -50%) }
+}
