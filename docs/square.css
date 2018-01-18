@@ -57,5 +57,5 @@ ul.square li:hover:after {
     transition: opacity 3s ease-in-out;
 }
 .back > div.active {
-    opacity: 0.8;
+    opacity: 0.5;
 }
