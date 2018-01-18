@@ -1,0 +1,76 @@
+/* common */
+body {
+    background-color: #000000;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* sns */
+#sns { width: 100vw; height: 100vh; }
+#sns > div { position: relative; width: 45vw; height: 30vh; margin: 2vh 2vw; border-radius: 5%; }
+
+#sns .sns-block:nth-child(odd) { float: left; }
+#sns .sns-block:nth-child(even) { float: right; }
+
+#sns .message {
+    position: absolute;
+    top: 5%;
+    left: 80px;
+    width: calc(100% - 90px);
+    min-width: 100px;
+    height: 90%;
+    color: #fff;
+}
+#sns .message p { margin: 0; }
+
+#sns .fa { margin: 10px; }
+
+#sns .sns-twitter {
+    background: #1da1f2;
+    color: #fff;
+}
+#sns .sns-twitter a:link    .fa-twitter-color { color: #fff; }
+#sns .sns-twitter a:visited .fa-twitter-color { color: #fff; }
+#sns .sns-twitter a:hover   .fa-twitter-color { color: #fff; }
+
+#sns .sns-github {
+    background: #fff;
+    color: #000;
+}
+#sns .sns-github a:link    .fa-github-color { color: #000; }
+#sns .sns-github a:visited .fa-github-color { color: #000; }
+#sns .sns-github a:hover   .fa-github-color { color: #000; }
+#sns .sns-github .message p { color: #000; }
+
+#sns .sns-tumblr {
+    background: #36465d;
+    color: #444;
+}
+#sns .sns-tumblr a:link    .fa-tumblr-color { color: #fff; }
+#sns .sns-tumblr a:visited .fa-tumblr-color { color: #fff; }
+#sns .sns-tumblr a:hover   .fa-tumblr-color { color: #fff; }
+
+#sns .sns-google-plus {
+    background: #d34836;
+    color: #fff;
+}
+#sns .sns-google-plus a:link    .fa-google-plus-color { color: #fff; }
+#sns .sns-google-plus a:visited .fa-google-plus-color { color: #fff; }
+#sns .sns-google-plus a:hover   .fa-google-plus-color { color: #fff; }
+
+#sns .sns-stack-overflow {
+    background: #f48024;
+    color: #fff;
+}
+#sns .sns-stack-overflow a:link    .fa-stack-overflow-color { color: #fff; }
+#sns .sns-stack-overflow a:visited .fa-stack-overflow-color { color: #fff; }
+#sns .sns-stack-overflow a:hover   .fa-stack-overflow-color { color: #fff; }
+
+#sns .sns-linux {
+    background: #1793d1;
+    color: #333;
+}
+#sns .sns-linux a:link    .fa-linux-color { color: #333; }
+#sns .sns-linux a:visited .fa-linux-color { color: #333; }
+#sns .sns-linux a:hover   .fa-linux-color { color: #333; }
+
