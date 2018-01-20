@@ -1,0 +1,97 @@
+#graph {
+    position: relative;
+    /* No Support
+    height: attr(graph-height px); 600px;
+    width: attr(graph-width px); 1000px;
+    */
+    height: 80vh;
+    width: 80vw;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+#graph:before {
+    content: attr(graph-vertical-name);
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: -30px;
+}
+#graph:after {
+    content: attr(graph-horizontal-name);
+    position: absolute;
+    top: 100%;
+    left: calc(100% + 10px);
+    transform: translate(0%, -50%);
+}
+#graph .graph-item {
+    position: absolute;
+    bottom: 0;
+    width: 5vw;
+    /* No Support
+    height: attr(val %);
+    */
+}
+#graph .graph-item:before {
+    content: attr(name);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -30px);
+    color: black;
+    animation: show-name 1s linear 5s forwards;
+}
+#graph .graph-item:nth-of-type(1) {
+    animation: grow-1 5s ease-in 0s forwards;
+    left: 6vw;
+    background: lime;
+}
+#graph .graph-item:nth-of-type(2) {
+    animation: grow-2 5s ease-in 0s forwards;
+    left: 14vw;
+    background: aqua;
+}
+#graph .graph-item:nth-of-type(3) {
+    animation: grow-3 5s ease-in 0s forwards;
+    left: 22vw;
+    background: ivory;
+}
+#graph .graph-item:nth-of-type(4) {
+    animation: grow-4 5s ease-in 0s forwards;
+    left: 30vw;
+    background: indigo;
+}
+#graph .graph-item:nth-of-type(5) {
+    animation: grow-5 5s ease-in 0s forwards;
+    left: 38vw;
+    background: violet;
+}
+#graph .graph-item:nth-of-type(6) {
+    animation: grow-6 5s ease-in 0s forwards;
+    left: 46vw;
+    background: khaki;
+}
+#graph .graph-item:nth-of-type(7) {
+    animation: grow-7 5s ease-in 0s forwards;
+    left: 54vw;
+    background: royalblue;
+}
+#graph .graph-item:nth-of-type(8) {
+    animation: grow-8 5s ease-in 0s forwards;
+    left: 62vw;
+    background: chocolate;
+}
+#graph .graph-item:nth-of-type(9) {
+    animation: grow-9 5s ease-in 0s forwards;
+    left: 70vw;
+    background: mintcream;
+}
+
+@keyframes grow-1 { 0% { height: 0%; } 100% { height: 45% } }
+@keyframes grow-2 { 0% { height: 0%; } 100% { height: 35% } }
+@keyframes grow-3 { 0% { height: 0%; } 100% { height: 70% } }
+@keyframes grow-4 { 0% { height: 0%; } 100% { height: 30% } }
+@keyframes grow-5 { 0% { height: 0%; } 100% { height: 80% } }
+@keyframes grow-6 { 0% { height: 0%; } 100% { height: 40% } }
+@keyframes grow-7 { 0% { height: 0%; } 100% { height: 55% } }
+@keyframes grow-8 { 0% { height: 0%; } 100% { height: 65% } }
+@keyframes grow-9 { 0% { height: 0%; } 100% { height: 25% } }
+
+@keyframes show-name { 0% { color: black; } 100% { color: white; } }
