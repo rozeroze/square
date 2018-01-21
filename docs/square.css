@@ -38,6 +38,7 @@ ul.square li:hover:after {
 /* back */
 .back > div {
     opacity: 0;
+    display: none;
     transition: opacity 3s ease-in-out;
 }
 .back > div * {
@@ -46,4 +47,5 @@ ul.square li:hover:after {
 }
 .back > div.active {
     opacity: 0.5;
+    display: block;
 }
