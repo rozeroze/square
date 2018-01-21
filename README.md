@@ -4,6 +4,11 @@ Webページを作る
 - Light Weight
 - Cool
 
+# theme
+Develop Animation on Web Browser
+- With CSS
+- Without Javascript
+
 # learning
 CSS Animationで遊ぶ  
 というのは名目で、  
